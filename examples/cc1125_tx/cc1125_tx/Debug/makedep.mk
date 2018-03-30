@@ -2,5 +2,9 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+cc1125.cpp
+
 cc1125_tx.cpp
+
+fastSPI.cpp
 

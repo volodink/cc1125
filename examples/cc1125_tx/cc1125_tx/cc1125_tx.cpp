@@ -5,8 +5,15 @@
  * Author : volodink
  */ 
 
-#include <avr/io.h>
+#define F_CPU 16000000
 
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+
+#include "cc1125.h"
+
+CC1125 rf;
 
 int main(void)
 {

@@ -37,7 +37,9 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../cc1125_tx.cpp
+../cc1125.cpp \
+../cc1125_tx.cpp \
+../fastSPI.cpp
 
 
 PREPROCESSING_SRCS += 
@@ -47,16 +49,24 @@ ASM_SRCS +=
 
 
 OBJS +=  \
-cc1125_tx.o
+cc1125.o \
+cc1125_tx.o \
+fastSPI.o
 
 OBJS_AS_ARGS +=  \
-cc1125_tx.o
+cc1125.o \
+cc1125_tx.o \
+fastSPI.o
 
 C_DEPS +=  \
-cc1125_tx.d
+cc1125.d \
+cc1125_tx.d \
+fastSPI.d
 
 C_DEPS_AS_ARGS +=  \
-cc1125_tx.d
+cc1125.d \
+cc1125_tx.d \
+fastSPI.d
 
 OUTPUT_FILE_PATH +=cc1125_tx.elf
 
@@ -72,6 +82,10 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 
